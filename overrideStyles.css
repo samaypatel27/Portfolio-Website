@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar-height-offset {
+    padding-top: 56px; 
+    margin-top: -56px;
+}
+/* First section (home) */
+.hero-section {
+    height: calc(100vh - 56px); 
+    background-image: url("personalPic.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+#hero-text-box {
+    padding: 2vh;
+    border-radius: 10px;
+    border: 1px solid rgb(49, 49, 69);
+}
+#ohio-state-text {
+    padding: 0.25vh;
+    border-radius: 5px;
+}
+#override-link-decoration {
+    text-decoration: none;
+    color: inherit;
+}
+/* Project section */
+.project-card {
+    background: rgba(248, 249, 250, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background: rgba(248, 249, 250, 0.95);
+}
+
+.skill-tag {
+    background: linear-gradient(45deg, rgba(13, 202, 240, 0.1), rgba(108, 117, 125, 0.1));
+    border: 1px solid rgba(13, 202, 240, 0.3);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: linear-gradient(45deg, rgba(13, 202, 240, 0.2), rgba(108, 117, 125, 0.2));
+    transform: scale(1.05);
+}
+
+.projects-row {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 20px;
+    transform: rotateX(180deg);
+    height: 520px;
+}
+
+.projects-row > div {
+    transform: rotateX(180deg);
+}
+
+.projects-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-row::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.projects-row::-webkit-scrollbar-thumb {
+    background: rgba(13, 202, 240, 0.5);
+    border-radius: 4px;
+}
+/* Experience section */
+.experience-card {
+    background: rgba(248, 249, 250, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    background: rgba(248, 249, 250, 0.95);
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" href = "./overrideStyles.css">
+    <!-- Bootstrap 5 CSS links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Samay's Portfolio Website</title>
+</head>
+<body>
+    <!-- Responsive Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#home">My Portfolio</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-medium mx-3" href="#projects"><i class="me-2 bi bi-archive-fill"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-medium mx-3" href="#experience"><i class="me-2 bi bi-person-workspace"></i>Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-medium mx-3" href="#contact"><i class="me-2 bi bi-envelope-at-fill"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The hero section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8">
+                    <div class="text-white" id = "hero-text-box" style = "background-color: rgba(72, 72, 72, 0.8);">
+                        <h1 class="display-4 fw-bold mb-3">Samay Patel</h1>
+                        <h5 class = "fw-bold mb-3"><span class = "text-info">Full-Stack</span> Developer</h5>
+                        <p class="lead mb-3">
+                            I'm a highly motivated college student at <span id = "ohio-state-text" class = "fw-bold bg-danger"><a id = "override-link-decoration" href = "https://cse.osu.edu/" target = "_blank">The Ohio State University</a></span> curious about ways I can leverage technology to build robust websites. I'm seeking an opportunity or internship where I can be part of something that will push the boundaries of what's currently possible by creating software that helps businesses thrive.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#projects" class="btn btn-info btn-lg">View Projects</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 mb-4">Projects</h2>
+                    <p class="lead">Check out my latest innovations</p>
+                </div>
+            </div>
+            
+            <div class="projects-row gap-4">
+                <!-- Project Card 1 -->
+                <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px;">
+                    <div class="project-card card h-100 shadow-lg rounded-4 p-4">
+                        <div class="text-center mb-3">
+                            <img src="ServiQ_logo.png" 
+                                 alt="E-Commerce Platform" class="rounded-circle border border-3 border-white shadow" 
+                                 style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                        <h5 class="card-title text-center fw-bold mb-3">ServiQ</h5>
+                        
+                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">HTML/EJS</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Bootstrap</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Node/Express.js</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Firebase</span>
+                        </div>
+                        
+                        <p class="card-text text-muted mb-4">A full-stack SASS volunteer event search platform with real-time updates. Built REST APIs, supporting an interactive map, dashboard feature through a secure user authentication system. Constructed front-end through a mobile-first apporach.
+                        </p>
+                        
+                        <div class="mt-auto">
+                            <a href = "http://serviq-volunteer.org" target = "_blank" class="btn btn-info w-100 rounded-pill">Website</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px;">
+                    <div class="project-card card h-100 shadow-lg rounded-4 p-4">
+                        <div class="text-center mb-3">
+                            <img src="YouTubeSpotify.png" 
+                                 alt="YouTube and Spotify logo" class="rounded-circle border border-3 border-white shadow" 
+                                 style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                        <h5 class="card-title text-center fw-bold mb-3">Spotify to YouTube Karaoke</h5>
+                        
+                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">React.js</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Bootstrap</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Python</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Flask</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">SQL</span>
+                        </div>
+                        
+                        <p class="card-text text-muted mb-4">A passion project of mine where I created a SQL REST API, powering a website for users to convert selected songs into a karaoke playlist on YouTube. This project isn't deployed yet, as I plan to leverage AI to modify the algorithm. </p>
+                        
+                        <div class="mt-auto">
+                            <a href = "https://github.com/samaypatel27/Spotify-To-Karaoke" target = "_blank" class="btn btn-info w-100 rounded-pill">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px;">
+                    <div class="project-card card h-100 shadow-lg rounded-4 p-4">
+                        <div class="text-center mb-3">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/27/20/48/headphones-2104207_1280.png" 
+                                 alt="Weather Dashboard" class="rounded-circle border border-3 border-white shadow" 
+                                 style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                        <h5 class="card-title text-center fw-bold mb-3">Songs Data Structure</h5>
+                        
+                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Java</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">JUnit</span>
+                        </div>
+                        
+                        <p class="card-text text-muted mb-4">Implemented a Queue to create a playlist data structure modeling the order of songs and their details. Leveraged OOP principles and class-based hierarchy. This project was for the class Software II: Software Development and Design.</p>
+                        
+                        <div class="mt-auto">
+                            <a href = "https://github.com/samaypatel27/Songs-Data-Structure" target = "_blank" class="btn btn-info w-100 rounded-pill">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4 -->
+                <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px;">
+                    <div class="project-card card h-100 shadow-lg rounded-4 p-4">
+                        <div class="text-center mb-3">
+                            <img src="https://cdn.pixabay.com/photo/2024/03/13/21/50/cards-8632027_1280.jpg" 
+                                 alt="Social Media Analytics" class="rounded-circle border border-3 border-white shadow" 
+                                 style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                        <h5 class="card-title text-center fw-bold mb-3">BlackJack</h5>
+                        
+                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">MATLAB</span>
+                        </div>
+                        
+                        <p class="card-text text-muted mb-4">An interactive rendition of the popular casino game using MATLAB's Simple Game Engine Library
+                            and card image files to form a player vs dealer game. This project was for the class Fundamentals of Engineering I.
+                        </p>
+                        
+                        <div class="mt-auto">
+                            <a href = "https://github.com/samaypatel27/BlackJack" target = "_blank" class="btn btn-info w-100 rounded-pill">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 mb-4">Experience</h2>
+                    <p class="lead">My professional journey and key accomplishments</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="experience-card card shadow-lg rounded-4 p-4">
+                        <div class="row align-items-center">
+                            <!-- Logo Section -->
+                            <div class="col-md-2 text-center mb-3 mb-md-0">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop&crop=center" 
+                                     alt="Company Logo" class="rounded-3 shadow-sm border border-2 border-light" 
+                                     style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                            
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="fw-bold text-dark mb-1">Technology Intern</h4>
+                                        <h5 class="text-info fw-semibold mb-3">TECHCORPS</h5>
+                                        
+                                        <p class="text-muted mb-3">
+                                            <i class="bi bi-calendar3 me-2"></i>
+                                            September 2023 - August 2024
+                                        </p>
+                                        
+                                        <p class="text-muted mb-4">
+                                            Contributed to <b>50%</b> of code to build two Swift applications from ground up, serving as templates for students
+                                            to use at annual TECHCORPS-hosted hackathons. These templates have been used over <b>hundreds</b> of students over the past 2 years
+                                            at over <b>15</b> Hackathons across Ohio. As an intern, I also helped brainstorm ideas for summer STEM programs,
+                                            where I served as an insutructor for over <b>150</b> students during the summer of 2024 on topics such as web development, and object-oriented programming.
+
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="navbar-height-offset py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 mb-4">Contact</h2>
+                <p class="lead">Feel free to reach out if you have any inquries on my work.</p>
+            </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- LinkedIn Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-lg rounded-4 p-4 border-0" style="background: rgba(248, 249, 250, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2) !important; transition: all 0.3s ease;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="bi bi-linkedin text-primary" style="font-size: 4rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3">LinkedIn</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Connect with me professionally to see updates on any internships or projects.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://linkedin.com/samaypatel27" target="_blank" class="btn btn-primary w-100 rounded-pill py-2">
+                                <i class="bi bi-linkedin me-2"></i>Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GitHub Card -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-lg rounded-4 p-4 border-0" style="background: rgba(248, 249, 250, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2) !important; transition: all 0.3s ease;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-4">
+                            <i class="bi bi-github text-dark" style="font-size: 4rem;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold mb-3">GitHub</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Check out my code repositories and contributions for the projects I have been working on.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/samaypatel27" target="_blank" class="btn btn-dark w-100 rounded-pill py-2">
+                                <i class="bi bi-github me-2"></i>View My Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Bootstrap Javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
