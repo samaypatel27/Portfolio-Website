@@ -89,3 +89,6 @@ html {
     transform: translateY(-5px);
     background: rgba(248, 249, 250, 0.95);
 }
+.project-card-CTA {
+    max-height: 100vh !important;
+}
