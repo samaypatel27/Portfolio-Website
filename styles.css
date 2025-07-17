@@ -8,7 +8,7 @@ html {
 /* First section (home) */
 .hero-section {
     height: calc(100vh - 56px); 
-    background-image: url("personalPic.jpeg"); 
+    background-image: url("images/personalPic.jpeg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
