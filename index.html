@@ -14,7 +14,7 @@
     <title>Samay Patel</title>
 </head>
 <body current-theme = "Light">
-
+        <!-- Modal when the user scrolls down, asking to switch to a different theme -->
             <div class="modal fade" id="themeAlertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -34,6 +34,22 @@
             </div>
         </div>
         </div>
+
+        <!-- Modal for looking at ServiQ website -->
+        <div class="modal fade" id="ServiQ-popupModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-body">
+                    Note: Because the domain under ServiQ runs on a free plan, the website may take up to 30 seconds
+                    to load when experiencing low traffic.
+                </div> <!-- Close modal-body -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Module</button>
+                    <a href = "https://serviq-volunteer.org" target = "_bound" type = "button" class = "btn btn-info"><span class = "me-2">Open in New Tab</span><i class="bi bi-box-arrow-up-right icon-display"></i></a>
+                </div>
+                </div> <!-- Close modal-content -->
+            </div> <!-- Close modal-dialog -->
+            </div> <!-- Close modal -->
 
 
 
@@ -127,7 +143,7 @@
                     </p>
                     
                     <div class=" d-flex justify-content-center gap-2">
-                        <a href = "http://serviq-volunteer.org" target = "_blank" class="btn btn-info w-100 rounded-pill">Website</a>
+                        <button class="btn btn-info w-100 rounded-pill"data-bs-toggle = "modal" data-bs-target = "#ServiQ-popupModal">Website</button>
                         <a href = "https://drive.google.com/file/d/1djke9Wk5ZpSyeA-dTS4nUiaVVcKHPkLM" target = "_blank" class="btn btn-info w-100 rounded-pill">Demo</a>
                         <a href = "https://github.com/mayurreddy06/ServiQ" target = "_blank" class="btn btn-info w-100 rounded-pill">Code</a>
                     </div>
