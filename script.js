@@ -59,15 +59,15 @@ function toggleTheme() {
         
     }
 }
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    if (window.scrollY >= 600 && !hasFired) {
-        window.hasFired = true;
-        console.log("passed limit - should only occur once")
-        // Get the modal element
-        const modal = new bootstrap.Modal(document.getElementById('themeAlertModal'));
+//     if (window.scrollY >= 600 && !hasFired) {
+//         window.hasFired = true;
+//         console.log("passed limit - should only occur once")
+//         // Get the modal element
+//         const modal = new bootstrap.Modal(document.getElementById('themeAlertModal'));
 
-        // Show the modal
-        modal.show();
-    }
-})
+//         // Show the modal
+//         modal.show();
+//     }
+// })

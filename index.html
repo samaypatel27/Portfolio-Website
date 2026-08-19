@@ -18,6 +18,7 @@
 
 <body current-theme="Light">
     <!-- Modal when the user scrolls down, asking to switch to a different theme -->
+    <!--
     <div class="modal fade" id="themeAlertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -38,6 +39,7 @@
             </div>
         </div>
     </div>
+    -->
 
     <!-- Modal for looking at ServiQ website -->
     <div class="modal fade" id="ServiQ-popupModal" tabindex="-1" aria-labelledby="exampleModalLabel1"
@@ -158,10 +160,10 @@
                         </div>
 
                         <p class="card-text text-muted mb-4 flex-grow-1">
-                            <b>First Place</b> at Ohio State Hack AI 2026. I built an AI pipeline integrating 4 REST
-                            APIs to screen over 20,000 FDA-approved drugs and surface cancer treatment candidates from
-                            protein interaction data — cutting what normally takes years of lab research down to under
-                            24 hours. 
+                            <b>Placed 1st out of 100+ teams</b> at <a href="https://hack.osu.edu/about-hack-ai/" target="_blank">HACK/AI</a>. Drug repurposing
+                            identifies existing drugs that treat other diseases, like certain cancers, which is typically a
+                            15-year, billion-dollar process. I helped built an AI pipeline finds protein targets and 3D structures
+                            for 20,000+ drugs, running docking simulations to surface candidates in under 24 hours.
                         </p>
 
                         <div class="d-flex justify-content-center gap-2">
@@ -189,10 +191,10 @@
                         </div>
 
                         <p class="card-text text-muted mb-4 flex-grow-1">
-                            <b>First Place</b> at ASA (American Statistical Association) DataFest 2026 hosted at Ohio State. I mapped over 1 million patient records against
-                            metro transit data to identify and visualize neighborhoods with limited healthcare access.
-                            From that analysis, I designed a city-wide shuttle system targeting underserved patients,
-                            projecting an 89% reduction in travel time to care.
+                            <b>Placed 1st out of 30+ teams</b> at <a href="https://ww2.amstat.org/education/datafest/" target="_blank">DataFest</a>. Many patients face
+                            transportation barriers to hospitals in the Topeka Kansas region, and 21% without reliable transit skip
+                            care. I helped synthesize 1M+ patient records across five datasets to map which neighborhoods
+                            send the most patients to the hospital, then created a statistical model projecting 89% reduction in travel time, informing for the need of shuttle systems.
                         </p>
 
                         <div class="d-flex justify-content-center gap-2">
@@ -237,7 +239,37 @@
                     </div>
                 </div>
 
+                <!-- Project Card 2 -->
+                <div class="col-lg-3 col-md-4 col-6 flex-shrink-3" style="min-width: 280px; min-height: 40vh;">
+                    <div class="project-card card  shadow-lg rounded-4 p-4 d-flex flex-column h-100">
+                        <div class="text-center mb-3">
+                            <img src="images/YouTubeSpotify.png" alt="YouTube and Spotify logo"
+                                class="rounded-circle border border-3 border-white shadow"
+                                style="width: 80px; height: 80px; object-fit: cover;">
+                        </div>
+                        <h5 class="card-title text-center fw-bold mb-3">Spotify to YouTube Karaoke</h5>
 
+                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">React.js</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Bootstrap</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Python</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Flask</span>
+                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">SQL</span>
+                        </div>
+
+                        <p class="card-text text-muted mb-4 flex-grow-1">I built a pipeline that syncs Spotify playlists
+                            to YouTube, authenticating users through Spotify OAuth to pull playlist metadata, then
+                            querying the YouTube Data API to automatically generate karaoke playlists at a rate of 0.8
+                            seconds per song.</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="https://github.com/samaypatel27/Spotify-To-Karaoke" target="_blank"
+                                class="btn btn-info w-100 rounded-pill">Code</a>
+                            <a href="https://drive.google.com/file/d/1pgfvRjYnUXbw946ADlacY8wmi00lac_B/view?usp=sharing"
+                                target="_blank" class="btn btn-info w-100 rounded-pill">Demo</a>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px; min-height: 40vh;">
                     <div class="project-card card shadow-lg rounded-4 p-4 d-flex flex-column h-100">
@@ -304,38 +336,6 @@
 
 
 
-
-                <!-- Project Card 2 -->
-                <div class="col-lg-3 col-md-4 col-6 flex-shrink-3" style="min-width: 280px; min-height: 40vh;">
-                    <div class="project-card card  shadow-lg rounded-4 p-4 d-flex flex-column h-100">
-                        <div class="text-center mb-3">
-                            <img src="images/YouTubeSpotify.png" alt="YouTube and Spotify logo"
-                                class="rounded-circle border border-3 border-white shadow"
-                                style="width: 80px; height: 80px; object-fit: cover;">
-                        </div>
-                        <h5 class="card-title text-center fw-bold mb-3">Spotify to YouTube Karaoke</h5>
-
-                        <div class="mb-3 d-flex flex-wrap gap-2 justify-content-center">
-                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">React.js</span>
-                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Bootstrap</span>
-                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Python</span>
-                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">Flask</span>
-                            <span class="skill-tag badge rounded-pill px-3 py-2 text-info">SQL</span>
-                        </div>
-
-                        <p class="card-text text-muted mb-4 flex-grow-1">A passion project where I created a platform to
-                            seamlessly convert Spotify Playlists into Karaoke equivalents on YouTube. I implemented a
-                            full-text search feature to instantly search for playlists and songs stored in a SQL
-                            database.</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <a href="https://github.com/samaypatel27/Spotify-To-Karaoke" target="_blank"
-                                class="btn btn-info w-100 rounded-pill">Code</a>
-                            <a href="https://drive.google.com/file/d/1pgfvRjYnUXbw946ADlacY8wmi00lac_B/view?usp=sharing"
-                                target="_blank" class="btn btn-info w-100 rounded-pill">Demo</a>
-                        </div>
-
-                    </div>
-                </div>
 
                 <!-- Project Card 3 -->
                 <div class="col-lg-3 col-md-4 col-6 flex-shrink-0" style="min-width: 280px; min-height: 40vh;">
